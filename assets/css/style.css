@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ====================== Header Links ==================== */
+
+.header {
+  background: #0853a2;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-inline: 10%;
+  padding-block: 15px;
+}
+
+.header-link-underline span {
+  text-decoration: underline;
+  padding-right: 20px;
+}
+
+.header-links-sc {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header-link-img {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+
+.header-link-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(136, 136, 136, 0.47);
+}
+
+.header-link-img img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+/* ====================== Navbar ============================ */
+
+
+
+nav {
+  background: #fff;
+  padding: 5px 11%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items a {
+  color: #0853a2;
+  font-weight: 500;
+}
+
+nav ul li.logo {
+  padding-right: 30px;
+
+}
+
+nav ul li.logo img {
+  width: 30px;
+
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav ul li i {
+  font-size: 23px;
+}
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: '\f00d';
+}
+
+
+
+/*======================= Footer ============================ */
+
+.footer {
+    padding-inline: 15%;
+    padding-block: 30px;
+  }
+  
+  .footer-info {
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-fs-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 25%;
+  }
+  
+  
+  .footer-lang span {
+    padding-left: 10px;
+  }
+  
+  .footer-copyright {
+    padding-top: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+  
+  }
+  
+  .footer-copyright div {
+    font-size: 12px;
+  }
+  
+  .footer-copyright div span {
+    padding-left: 10px;
+  }
+  
+  .privacy {
+    display: none;
+  }
+  
+  /* =================== Responsive ======================== */
+  
+  
+  @media all and (max-width: 900px) {
+  
+    nav {
+      padding: 5px 30px;
+    }
+  
+    nav ul {
+      justify-content: space-between;
+    }
+  
+    nav ul li.items {
+      width: 100%;
+      display: none;
+    }
+  
+    nav ul li.items.show {
+      display: block;
+    }
+  
+    nav ul li.btn {
+      display: block;
+    }
+  }
+
+
+  @media screen and (max-width: 990px) {
+    .header-links {
+      font-size: 10px;
+      padding-inline: 5%;
+    }
+  
+    .footer-lang {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-copyright {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .privacy {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-copyright span span {
+      display: none;
+    }
+  
+    .footer-copyright div {
+      display: none;
+    }
+  
+  }
+  
+
+  

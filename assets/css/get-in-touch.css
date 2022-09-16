@@ -1,0 +1,254 @@
+
+
+/* ====================== Landing =========================== */
+
+.mobile-landing {
+  display: none;
+  background: url('../images/main-bg.jpg');
+  background-size: cover;
+  background-position: 20% center;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.landing {
+  background: url('../images/main-bg.jpg');
+  background-position: 50% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding-block: 240px;
+}
+
+.landing h2 {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+
+.landing p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+.navigation {
+  padding-block: 30px;
+  background: #F5F5F5;
+  text-align: end;
+  padding-inline: 11%;
+}
+
+.navigation span {
+  color: #333;
+  margin-left: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.navigation span:hover {
+  color: #0070ba;
+}
+
+/* ======================= Forms ============================ */
+
+.forms {
+  padding-inline: 8%;
+  padding-bottom: 50px;
+}
+
+.forms-content {
+  padding-inline: 10%;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  border-inline: 1px solid rgba(136, 136, 136, 0.201);
+  color: rgb(70, 70, 70);
+}
+
+.forms-content h2 {
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.forms-content p {
+  font-weight: 500;
+  padding-block: 10px;
+  padding-bottom: 20px;
+}
+
+.forms-content a {
+  color: #0070ba;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forms-content a:hover {
+  text-decoration: underline;
+}
+
+
+.forms-content img {
+  width: 40px;
+  height: 40px;
+}
+
+.form {
+  position: relative;
+  height: 4rem;
+  margin-top: 20px;
+}
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e1e5ee;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  outline: none;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  padding-inline: .8rem;
+  background: none;
+  /* Change border when input focus*/
+}
+
+.form__label {
+  font-size: 16px;
+  position: absolute;
+  left: .5rem;
+  top: 1.2rem;
+  padding: 0 0.5rem;
+  color: #888;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.form-btn {
+  width: 100%;
+  padding-block: 12px;
+  margin-top: 30px;
+  color: #fff;
+  background: #0853a2;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #0070ba ;
+}
+
+.form__input:focus {
+  border-color: #0070ba85;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: 0.5rem;
+  font-size: 12px;
+}
+
+
+
+/* ====================== Links =========================== */
+
+.links {
+  text-align: center;
+  padding-block: 30px;
+  background: #0070ba0b;
+}
+
+.links span {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* =================== Responsive ======================== */
+
+
+
+@media screen and (max-width: 990px) {
+  .navigation {
+    text-align: center;
+    padding-inline: 0;
+  }
+
+  .navigation span {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .mobile-landing {
+    display: block;
+  }
+
+  .landing {
+    background: none;
+    color: #000;
+    padding-block: 50px;
+  }
+
+  .landing h2 {
+    font-size: 30px;
+  }
+  
+  
+  .landing p {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-inline: 2%;
+  }
+
+  .forms {
+    padding-inline: 0;
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .landing h2 {
+    font-size: 20px;
+  }
+  
+  
+  .landing p {
+    font-size: 12px;
+  }
+
+  .forms-content h2 {
+    font-size: 16px;
+  }
+
+  .forms-content p {
+    font-size: 12px;
+  }
+
+  .forms-content a {
+    font-size: 12px;
+  }
+
+  .forms-content {
+    padding-inline: 5%;
+  }
+
+  
+  
+}
